@@ -19,7 +19,10 @@ class MyApp extends StatelessWidget {
       getPages: AppRoute.routes,
       theme: ThemeData(
           appBarTheme: const AppBarTheme(
-              backgroundColor: Colors.white,
+              color: Colors.white,
+              centerTitle: true,
+              elevation: 0,
+              iconTheme: IconThemeData(color: Colors.black),
               titleTextStyle: TextStyle(color: Colors.black, fontSize: 18))),
     );
   }
