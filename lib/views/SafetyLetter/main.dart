@@ -1,5 +1,6 @@
 import 'package:bruno/bruno.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SafetyLetter extends StatefulWidget {
   const SafetyLetter({super.key});
@@ -43,10 +44,49 @@ class _SafetyLetterState extends State<SafetyLetter>
           Expanded(
               child: _selectedIndex == 0
                   ? ListView(
-                      children: [Text("123"), Text("123"), Text("123")],
+                      padding: EdgeInsets.all(8),
+                      children: [
+                        Container(
+                          color: Colors.white,
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: ListTile(
+                            title: Text("文件名称"),
+                            subtitle: Text("店长"),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                            onTap: () => {Get.toNamed("/unSign")},
+                          ),
+                        ),
+                        Container(
+                          color: Colors.white,
+                          child: const ListTile(
+                            title: Text("文件名称"),
+                            subtitle: Text("店长"),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                          ),
+                        ),
+                      ],
                     )
                   : ListView(
-                      children: [Text("321"), Text("312"), Text("321")],
+                      padding: EdgeInsets.all(8),
+                      children: [
+                        Container(
+                          color: Colors.white,
+                          margin: EdgeInsets.only(bottom: 8),
+                          child: const ListTile(
+                            title: Text("文件名称"),
+                            subtitle: Text("店长"),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                          ),
+                        ),
+                        Container(
+                          color: Colors.white,
+                          child: const ListTile(
+                            title: Text("文件名称"),
+                            subtitle: Text("店长"),
+                            trailing: Icon(Icons.arrow_forward_ios),
+                          ),
+                        ),
+                      ],
                     ))
         ],
       ),

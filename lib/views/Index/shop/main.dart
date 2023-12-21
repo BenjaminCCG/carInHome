@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widget/titleItem.dart';
+import 'package:flutter_application_1/widget/TitleItem.dart';
 import 'package:get/get.dart';
 
 class MenuItem {
